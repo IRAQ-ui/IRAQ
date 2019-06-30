@@ -1,10 +1,5 @@
 --[[
- _____ ____  _   _    _    _  _______
-|_   _/ ___|| | | |  / \  | |/ / ____|
-  | | \___ \| |_| | / _ \ | ' /|  _|
-  | |  ___) |  _  |/ ___ \| . \| |___
-  |_| |____/|_| |_/_/   \_\_|\_\_____|
-           CH > @IRAQTEAM
+
 --]]
 --------------------------------------
 serpent = (loadfile  "./libs/serpent.lua")()
@@ -957,9 +952,9 @@ end
 if text:match("^تحديث السورس$")  then
 send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
-os.execute('cd libs && wget https://raw.githubusercontent.com/IRAQabas/IRAQ/master/libs/utils.lua')
+os.execute('cd libs && wget https://raw.githubusercontent.com/IRAQ-ui/IRAQ/master/libs/utils.lua')
 os.execute('rm -rf IRAQ.lua')
-os.execute('wget https://raw.githubusercontent.com/IRAQabas/IRAQ/master/IRAQ.lua')
+os.execute('wget https://raw.githubusercontent.com/IRAQ-ui/IRAQ/master/IRAQ.lua')
 dofile('IRAQ.lua')  
 os.exit()
 return false
@@ -2172,9 +2167,9 @@ end
 if text:match("^تحديث السورس$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '☑┇تم التحديث', 1, 'md')
 os.execute('rm -rf ./libs/utils.lua')
-os.execute('cd libs && wget https://raw.githubusercontent.com/IRAQabas/IRAQ/master/libs/utils.lua')
+os.execute('cd libs && wget https://raw.githubusercontent.com/IRAQ-ui/IRAQ/master/libs/utils.lua')
 os.execute('rm -rf IRAQ.lua')
-os.execute('wget https://raw.githubusercontent.com/IRAQabas/IRAQ/master/IRAQ.lua')
+os.execute('wget https://raw.githubusercontent.com/IRAQ-ui/IRAQ/master/IRAQ.lua')
 dofile('IRAQ.lua')  
 os.exit()
 return false
